@@ -6,8 +6,8 @@ Data structure
 By George Nwabia, Stephanie Okpo-Mfon
 
 0. push, pall
-mandatory
-Implement the push and pall opcodes.
+   mandatory
+   Implement the push and pall opcodes.
 
 The push opcode
 
@@ -27,8 +27,8 @@ Format: see example
 If the stack is empty, don’t print anything
 
 1. pint
-mandatory
-Implement the pint opcode.
+   mandatory
+   Implement the pint opcode.
 
 The pint opcode
 
@@ -38,8 +38,8 @@ Usage: pint
 If the stack is empty, print the error message L<line_number>: can't pint, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
 
 2. pop
-mandatory
-Implement the pop opcode.
+   mandatory
+   Implement the pop opcode.
 
 The pop opcode
 
@@ -49,8 +49,8 @@ Usage: pop
 If the stack is empty, print the error message L<line_number>: can't pop an empty stack, followed by a new line, and exit with the status EXIT_FAILURE
 
 3. swap
-mandatory
-Implement the swap opcode.
+   mandatory
+   Implement the swap opcode.
 
 The swap opcode
 
@@ -60,8 +60,8 @@ Usage: swap
 If the stack contains less than two elements, print the error message L<line_number>: can't swap, stack too short, followed by a new line, and exit with the status EXIT_FAILURE
 
 4. add
-mandatory
-Implement the add opcode.
+   mandatory
+   Implement the add opcode.
 
 The add opcode
 
@@ -74,11 +74,24 @@ The top element of the stack contains the result
 The stack is one element shorter
 
 5. nop
-mandatory
-Implement the nop opcode.
+   mandatory
+   Implement the nop opcode.
 
 The nop opcode
 
 The opcode nop doesn’t do anything.
 
 Usage: nop
+
+## Advanced
+
+6. sub
+   advanced
+
+The sub opcode
+
+The opcode sub subtracts the first element from the second and stores the result in the second element ,
+effectively setting the second element to the top element.
+If the stack contains less than two elements, print the error message L<line_number>: can't sub, stack too short, followed by a new line, and exit with the status EXIT_FAILURE
+
+usage:sub
