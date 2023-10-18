@@ -94,4 +94,4 @@ The opcode sub subtracts the first element from the second and stores the result
 effectively setting the second element to the top element.
 If the stack contains less than two elements, print the error message L<line_number>: can't sub, stack too short, followed by a new line, and exit with the status EXIT_FAILURE
 
-usage:sub
+Usage:sub
