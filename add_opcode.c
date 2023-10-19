@@ -7,14 +7,8 @@
  */
 void f_add(stack_t **stack, unsigned int line_number)
 {
-    int length = 0, result;
     stack_t *head_copy = *stack;
-
-    while (head_copy)
-    {
-        head_copy = head_copy->next;
-        length++;
-    }
+    int length = check_length(head_copy), result;
 
     if (length < 2)
     {

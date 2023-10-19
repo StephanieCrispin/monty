@@ -8,7 +8,6 @@
 
 void f_sub(stack_t **stack, unsigned int line_number)
 {
-    /* int length = 0, result;*/
     stack_t *head_copy = *stack;
     int length = check_length(head_copy), result;
 
