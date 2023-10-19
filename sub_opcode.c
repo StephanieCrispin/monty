@@ -6,13 +6,11 @@
  * @line_number: The line number
  */
 
-int check_length(stack_t *stack);
 void f_sub(stack_t **stack, unsigned int line_number)
 {
-    int length = 0, result;
+    /* int length = 0, result;*/
     stack_t *head_copy = *stack;
-
-    length = check_length(head_copy);
+    int length = check_length(head_copy), result;
 
     if (length < 2)
     {
@@ -29,16 +27,4 @@ void f_sub(stack_t **stack, unsigned int line_number)
     head_copy->next->n = result;
     *stack = head_copy->next;
     free(head_copy);
-}
-
-int check_length(stack_t *stack)
-{
-    int length = 0;
-
-    while (stack)
-    {
-        stack = stack->next;
-        length++;
-    }
-    return (length);
 }

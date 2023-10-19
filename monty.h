@@ -39,7 +39,7 @@ typedef struct bus_s
 	FILE *file;
 	char *content;
 	int lifi;
-}  bus_t;
+} bus_t;
 extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
@@ -55,6 +55,10 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/*Utility function*/
+int check_length(stack_t *stack);
+
+/*Supporting functions*/
 void f_push(stack_t **stack, unsigned int line_number);
 void f_pall(stack_t **stack, unsigned int line_number);
 void f_pint(stack_t **stack, unsigned int line_number);
