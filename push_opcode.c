@@ -4,7 +4,7 @@
  * f_push - add node to the stack
  * @stack: stack head
  * @line_number: line_number
- * Return: void
+ * Return: nothing
  */
 void f_push(stack_t **stack, unsigned int line_number)
 {
