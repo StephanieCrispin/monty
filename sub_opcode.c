@@ -6,7 +6,7 @@
  * @line_number: The line number
  */
 
-int check_length_and_return_error(stack_t **stack, stack_t *head_copy, char *op, unsigned int line_number);
+void check_length_and_return_error(stack_t **stack, stack_t *head_copy, char *op, unsigned int line_number);
 void f_sub(stack_t **stack, unsigned int line_number)
 {
     int length = 0, result;
@@ -31,7 +31,7 @@ void f_sub(stack_t **stack, unsigned int line_number)
     free(head_copy);
 }
 
-int check_length_and_return_error(stack_t **stack, stack_t *head_copy, char *op, unsigned int line_number)
+void check_length_and_return_error(stack_t **stack, stack_t *head_copy, char *op, unsigned int line_number)
 {
     int length = 0;
 
@@ -40,7 +40,7 @@ int check_length_and_return_error(stack_t **stack, stack_t *head_copy, char *op,
         head_copy = head_copy->next;
         length++;
     }
-    return (length);
+    /*  return (length);*/
 
     if (length < 2)
     {
